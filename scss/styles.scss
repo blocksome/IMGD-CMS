@@ -1,0 +1,72 @@
+//Styles for IRL
+
+$student-violet: #9651a4;
+$lecturer-indigo: #5c2068;
+$admin-red: #ff1736;
+
+//User type styling
+.student-element{
+    background-color: $student-violet;
+    color: white;
+}
+
+//General Styling
+html{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header{
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    left: 0;
+}
+
+#header-buffer{
+    height: 7vh;
+}
+
+footer{
+    position: absolute;
+    width: 100vw;
+    bottom: 0;
+    left: 0;
+}
+
+//Login Styling
+#login-form{
+    align-self: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    padding: 20px;
+
+    width: 50vw;
+    height: 60vh;
+
+    border-radius: 35px;
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.500);
+}
+
+#login-form div{
+    width: 18vw;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: space-around;
+    
+    padding: 7px;
+    padding-right: 35px;
+}
+
+#login-btn{
+    margin: 10px;
+}
