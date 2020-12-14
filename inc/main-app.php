@@ -84,7 +84,7 @@ else if (isset($_GET['project-software-btn'])) {
 
 }
 
-//List of software titles installed in each notebook 
+//List of software titles installed in each notebook *
 else if (isset($_GET['notebook-software-btn'])) {
 
     include("inc/queries/notebook-software.php");
