@@ -1,14 +1,16 @@
 <!--Students List Query-->
 <?php
 $sql = "SELECT * "; //Select everything
-$sql .= "FROM student "; //Reading from Projects table
+$sql .= "FROM student "; //Reading from Students table
 $sql .= "ORDER BY student_id;"; //Sort by id
 $result = $con->query($sql);
 if ($result->num_rows > 0) { //Output data of each row
 
     //Display table headers
+    echo "<h2>Students</h2>";
+
     echo "
-            <table id='results-table'>
+            <table class='results-table'>
                 <thead>
                     <th> Student ID
                     </th>
@@ -52,13 +54,8 @@ if ($result->num_rows > 0) { //Output data of each row
     echo "
 
         </tbody>
-
-        <tfoot>
-            <h2>Query complete, fetched " . $i . " result(s).</h2>
-        </tfoot>
-
     </table>
-    
+    <h2>Query complete, fetched " . $i . " result(s).</h2>
     ";
 
 } 

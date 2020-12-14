@@ -32,23 +32,10 @@ html{
     flex-direction: column;
 }
 
-header{
-    position: absolute;
-    width: 100vw;
-    top: 0;
-    left: 0;
-}
-
 #header-buffer{
     height: 7vh;
 }
 
-footer{
-    position: absolute;
-    width: 100vw;
-    bottom: 0;
-    left: 0;
-}
 
 //Login Styling
 #login-form, #content-div{
@@ -82,7 +69,7 @@ footer{
 }
 
 //Main App Styling
-#results-table, th, tr, td{
+.results-table, th, tr, td{
     margin: 20px;
     border: 1px solid black;
 }
