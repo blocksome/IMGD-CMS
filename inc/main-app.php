@@ -105,7 +105,7 @@ else if (isset($_GET['project-member-btn'])) {
 
 }
 
-//For a given lecturer, the number of hours spent on each project.
+//For a given lecturer, the number of hours spent on each project. *
 else if (isset($_GET['supervisor-hours-btn'])) {
 
     include("inc/queries/supervisor-hours.php");
