@@ -77,14 +77,14 @@ else if (isset($_GET['student-notebook-btn'])) {
 
 }
 
-//List of software titles used in each project
+//List of software titles used in each project * 
 else if (isset($_GET['project-software-btn'])) {
 
     include("inc/queries/project-software.php");
 
 }
 
-//List of software titles installed in each notebook
+//List of software titles installed in each notebook 
 else if (isset($_GET['notebook-software-btn'])) {
 
     include("inc/queries/notebook-software.php");
