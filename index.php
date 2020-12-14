@@ -15,8 +15,6 @@ $userClass = "student-element";
     
     <!--Login Form-->
     <?php
-    ob_start();
-	session_start();
     //Error message
     $errorMsg = "";
 
@@ -59,7 +57,7 @@ $userClass = "student-element";
         }
     } 
     ?>
-        
+        <?php ob_start(); ?>
         <form name="login-form" id="login-form" class="flex" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="get">
             <h2>Login</h2>
 

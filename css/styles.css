@@ -84,4 +84,9 @@ footer {
 #login-btn {
   margin: 10px;
 }
+
+#results-table, th, tr, td {
+  border: 1px solid black;
+  color: red;
+}
 /*# sourceMappingURL=styles.css.map */
