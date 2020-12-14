@@ -1,12 +1,22 @@
 //Styles for IRL
 
 $student-violet: #9651a4;
-$lecturer-indigo: #5c2068;
+$lecturer-blue: #4a78da;
 $admin-red: #ff1736;
 
 //User type styling
 .student-element{
     background-color: $student-violet;
+    color: white;
+}
+
+.lecturer-element{
+    background-color: $lecturer-blue;
+    color: white;
+}
+
+.admin-element{
+    background-color: $admin-red;
     color: white;
 }
 
@@ -41,7 +51,7 @@ footer{
 }
 
 //Login Styling
-#login-form{
+#login-form, #content-div{
     align-self: center;
     margin: auto;
     margin-top: 50px;
@@ -50,7 +60,7 @@ footer{
     padding: 20px;
 
     width: 50vw;
-    height: 60vh;
+    min-height: 60vh;
 
     border-radius: 35px;
     box-shadow: 0 10px 8px rgba(0, 0, 0, 0.500);

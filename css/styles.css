@@ -3,6 +3,16 @@
   color: white;
 }
 
+.lecturer-element {
+  background-color: #4a78da;
+  color: white;
+}
+
+.admin-element {
+  background-color: #ff1736;
+  color: white;
+}
+
 html {
   font-family: 'Open Sans', sans-serif;
 }
@@ -41,7 +51,7 @@ footer {
   left: 0;
 }
 
-#login-form {
+#login-form, #content-div {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -50,7 +60,7 @@ footer {
   margin-bottom: 50px;
   padding: 20px;
   width: 50vw;
-  height: 60vh;
+  min-height: 60vh;
   border-radius: 35px;
   -webkit-box-shadow: 0 10px 8px rgba(0, 0, 0, 0.5);
           box-shadow: 0 10px 8px rgba(0, 0, 0, 0.5);

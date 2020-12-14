@@ -11,7 +11,7 @@ $userClass = "student-element";
 <body>
     <?php include("inc/header.php") ?>
 
-
+    <?php include("inc/main-app.php") ?>
 
     <?php include("inc/footer.php") ?>
 

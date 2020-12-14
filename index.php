@@ -1,4 +1,5 @@
 <!doctype html>
+<?php ob_start(); ?>
 <html lang="en">
 
 <?php
@@ -8,11 +9,14 @@ include("inc/head.php");
 $userClass = "student-element";
 ?>
 
+
 <body>
     <?php include("inc/header.php") ?>
-
+    
     <!--Login Form-->
     <?php
+    ob_start();
+	session_start();
     //Error message
     $errorMsg = "";
 
@@ -25,6 +29,7 @@ $userClass = "student-element";
 
         //Student Login
         if ($_GET['username'] == 'studentUser' && $_GET['password'] == 'studentPass' && preg_match($standardRegex, $username) && preg_match($standardRegex, $password)) {
+            
             header('Location: student.php');
         }
 
@@ -54,7 +59,7 @@ $userClass = "student-element";
         }
     } 
     ?>
-
+        
         <form name="login-form" id="login-form" class="flex" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="get">
             <h2>Login</h2>
 
