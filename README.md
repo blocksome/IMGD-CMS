@@ -8,6 +8,8 @@ The IMGD Resource Library (IRL) CMS manages the library's software inventory. Pu
 - View data from different perspectives - student, lecturer or admin.
 
 ## Testing
+NOTE: To use this app you must host it on a server. Either do so with a localhost or a web server.
+
 1. Logging In:
     Log in with the following credentials. Each set pertains to a specific user type and will affect app layout:
         - (username, password)
@@ -18,3 +20,6 @@ The IMGD Resource Library (IRL) CMS manages the library's software inventory. Pu
 2. Display data:
     1. Press any button after logging in.
     2. Relevant data regarding the query should appear on screen.
+
+## Technologies Used
+ - [Database](http://amphibistudio.sg/phpmyadmin/)
