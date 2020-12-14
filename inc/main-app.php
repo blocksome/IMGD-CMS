@@ -112,6 +112,12 @@ else if (isset($_GET['supervisor-hours-btn'])) {
 
 }
 
+else {
+    ?>
+        <h2> Press a button to send a query to the server. </h2>
+    <?php
+}
+
 ?>
 
 </div>
