@@ -91,14 +91,14 @@ else if (isset($_GET['notebook-software-btn'])) {
 
 }
 
-//List of lecturer supervising each project
+//List of lecturer supervising each project *
 else if (isset($_GET['supervisor-btn'])) {
 
     include("inc/queries/supervisor.php");
 
 }
 
-//List of students assigned to each project
+//List of students assigned to each project *
 else if (isset($_GET['project-member-btn'])) {
 
     include("inc/queries/project-member.php");
