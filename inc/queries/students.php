@@ -1,8 +1,8 @@
-<!--Projects List Query-->
+<!--Students List Query-->
 <?php
 $sql = "SELECT * "; //Select everything
-$sql .= "FROM project "; //Reading from Projects table
-$sql .= "ORDER BY project_no;"; //Sort by id
+$sql .= "FROM student "; //Reading from Projects table
+$sql .= "ORDER BY student_id;"; //Sort by id
 $result = $con->query($sql);
 if ($result->num_rows > 0) { //Output data of each row
 
@@ -10,19 +10,21 @@ if ($result->num_rows > 0) { //Output data of each row
     echo "
             <table id='results-table'>
                 <thead>
+                    <th> Student ID
+                    </th>
+                    <th> Name
+                    </th>
+                    <th> Contact No.
+                    </th>
+                    <th> Year Enrolled
+                    </th>
+                    <th> Graduation Date
+                    </th>
+                    <th> School
+                    </th>
+                    <th> Notebook Serial No.
+                    </th>
                     <th> Project No.
-                    </th>
-                    <th> Project Title
-                    </th>
-                    <th> Project Description
-                    </th>
-                    <th> Start Date
-                    </th>
-                    <th> End Date
-                    </th>
-                    <th> Budget
-                    </th>
-                    <th> Company
                     </th>
                 </thead>
 
@@ -34,13 +36,14 @@ if ($result->num_rows > 0) { //Output data of each row
     while ($row = mysqli_fetch_assoc($result)) {
 
         echo "<tr>";
+        echo "<td>" . $row["student_id"] . "</td>";
+        echo "<td>" . $row["student_name"] . "</td>";
+        echo "<td>" . $row["contact_no"] . "</td>";
+        echo "<td>" . $row["enrol_year"] . "</td>";
+        echo "<td>" . $row["grad_date"] . "</td>";
+        echo "<td>" . $row["school"] . "</td>";
+        echo "<td>" . $row["notebook_serial"] . "</td>";
         echo "<td>" . $row["project_no"] . "</td>";
-        echo "<td>" . $row["project_title"] . "</td>";
-        echo "<td>" . $row["project_desc"] . "</td>";
-        echo "<td>" . $row["start_date"] . "</td>";
-        echo "<td>" . $row["end_date"] . "</td>";
-        echo "<td>" . $row["budget"] . "</td>";
-        echo "<td>" . $row["company"] . "</td>";
         echo "</tr>";
 
         $i++;

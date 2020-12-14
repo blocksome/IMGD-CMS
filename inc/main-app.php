@@ -49,14 +49,14 @@ if (mysqli_connect_errno()) {
 
 
 //Switch tables
-//List of projects
+//List of projects *
 if (isset($_GET['projects-btn'])) {
 
     include("inc/queries/projects.php");
 
 }
 
-//List of students
+//List of students *
 else if (isset($_GET['students-btn'])) {
 
     include("inc/queries/students.php");
