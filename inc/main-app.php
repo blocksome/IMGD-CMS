@@ -63,7 +63,7 @@ else if (isset($_GET['students-btn'])) {
 
 }
 
-//The list of software title for each category
+//The list of software title for each category *
 else if (isset($_GET['software-btn'])) {
 
     include("inc/queries/software.php");

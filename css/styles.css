@@ -37,7 +37,7 @@ html {
   height: 7vh;
 }
 
-#login-form, #content-div {
+#login-form {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -46,6 +46,21 @@ html {
   margin-bottom: 50px;
   padding: 20px;
   width: 50vw;
+  min-height: 60vh;
+  border-radius: 35px;
+  -webkit-box-shadow: 0 10px 8px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 10px 8px rgba(0, 0, 0, 0.5);
+}
+
+#content-div {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 20px;
+  width: 75vw;
   min-height: 60vh;
   border-radius: 35px;
   -webkit-box-shadow: 0 10px 8px rgba(0, 0, 0, 0.5);

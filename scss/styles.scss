@@ -38,7 +38,7 @@ html{
 
 
 //Login Styling
-#login-form, #content-div{
+#login-form{
     align-self: center;
     margin: auto;
     margin-top: 50px;
@@ -47,6 +47,21 @@ html{
     padding: 20px;
 
     width: 50vw;
+    min-height: 60vh;
+
+    border-radius: 35px;
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.500);
+}
+
+#content-div{
+    align-self: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    padding: 20px;
+
+    width: 75vw;
     min-height: 60vh;
 
     border-radius: 35px;
