@@ -1,4 +1,4 @@
-<!--Software List Query-->
+<!--Student Notebook List Query-->
 <?php
 $sql = "SELECT *
         FROM student AS s

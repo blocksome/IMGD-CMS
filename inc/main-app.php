@@ -70,7 +70,7 @@ else if (isset($_GET['software-btn'])) {
 
 }
 
-//List of students with notebooks
+//List of students with notebooks *
 else if (isset($_GET['student-notebook-btn'])) {
 
     include("inc/queries/student-notebook.php");
