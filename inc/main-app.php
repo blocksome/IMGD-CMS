@@ -1,18 +1,11 @@
 <?php
 //Connect to database
 
-//Localhost Login
-$dbhost = "localhost";
-$dbuser = "root";
-$dbpass = "";
-$dbname = "irl_database";
-
-/* //School db login
+//School db login
 $dbhost = "localhost";
 $dbuser = "amphibis_joses";
 $dbpass = "miGLzU*S.xJV";
 $dbname = "amphibis_joses";
-*/
 
 $con = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname); // Test if connection occurred.
 
